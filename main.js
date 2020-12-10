@@ -7,14 +7,14 @@ let both = 0;
 function moveLeft() {
     var left = parseInt(window.getComputedStyle(character).getPropertyValue('left'));
     if(left>0){
-    character.style.left = left - 2 + "px";
+    character.style.left = left - 1 + "px";
     }
 }
 
 function moveRight() {
     var left = parseInt(window.getComputedStyle(character).getPropertyValue('left'));
     if(left<690)
-    character.style.left = left + 2 + "px";
+    character.style.left = left + 1 + "px";
 
 }
 
