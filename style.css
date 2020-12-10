@@ -1,20 +1,22 @@
 body{
-  padding: 50px
+  backgroound-color: #FFF;
+  padding: 50px;
+  margin: 0;
 }
-#contentContainer{
-  width: 1000px;
-  height: 500px;
-  background: lightgray;
-  border: 10px gray solid;
+#contentContainer {
+  width: 550px;
+  height: 350px;
+  border: 15px #EDEDED solid;
   overflow: hidden;
+  background-color: #F2F2F2;
+  cursor: pointer;
 }
-
-#circle{
-  width: 100px;
-  height: 100px;
-  background: gold;
-  border: 5px orange solid;
+#thing{
+  width: 75px;
+  height: 75px;
+  backgroud-color: rgb(255, 207, 0);
   border-radius: 50%;
-  transform: translate3d(50px,50px,0);
-  transition: .3s ease-in;
+  border: 15px rgb(255, 199, 0) solid;
+  transform: translate3d(50px, 50px, 0);
+  transition: transform .3s cubic-bezier(.17, .67, .83, .67);
 }
