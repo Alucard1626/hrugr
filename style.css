@@ -8,7 +8,7 @@ body{
   height: 350px;
   border: 15px #EDEDED solid;
   overflow: hidden;
-  background-color: #F2F2F2;
+  background-color: white;
   cursor: pointer;
 }
 #thing{
@@ -16,7 +16,7 @@ body{
   height: 20px;
   backgroud-color: gray;
   border-radius: 50%;
-  border: 15px rgb(255, 199, 0) solid;
+  border: 1px gray solid;
   transform: translate3d(50px, 50px, 0);
   transition: transform .3s cubic-bezier(.17, .67, .83, .67);
 }
