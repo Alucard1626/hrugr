@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    z-index: 1000000;
+}
