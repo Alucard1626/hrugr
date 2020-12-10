@@ -1,54 +1,11 @@
+var target = document.getElementById('target');
+var targetBox = document.getElementById('target-box');
 
-let circle = document.querySelector('.circle');
-let moveBy = 10;
+targetBox.addEventListener('click', mouseClicked);
 
-window.addEventListener('load', () => {
-    circle.style.position = 'absolute';
-    circle.style.left = 0;
-    circle.style.top = 0;
-});
-
-
-window.addEventListener('keyup', (e) => {
-    switch (e.key) {
-        case 'ArrowLeft':
-            circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
-            break;
-        case 'ArrowRight':
-            circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
-            break;
-        case 'ArrowUp':
-            circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
-            break;
-        case 'ArrowDown':
-            circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
-            break;
-    }
-});
-
-let circle = document.querySelector('.circle');
-let moveBy = 10;
- 
-window.addEventListener('load', () => {
-    circle.style.position = 'absolute';
-    circle.style.left = 0;
-    circle.style.top = 0;
-});
- 
- 
-window.addEventListener('keyup', (e) => {
-    switch (e.key) {
-        case 'ArrowLeft':
-            circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
-            break;
-        case 'ArrowRight':
-            circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
-            break;
-        case 'ArrowUp':
-            circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
-            break;
-        case 'ArrowDown':
-            circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
-            break;
-    }
-});
+function mouseClicked (event){
+  var xposition = (event.clientX - target.offsetLeft - target.offsetWidth/2);
+  var yposition = (event.clientY - target.offsetTop - target.offsetHeight/2);
+  target.style.transform = "translate("+ xposition + "px," + yposition + "px)";
+  console.log(event);
+}
