@@ -5,8 +5,8 @@ container.addEventListener("click", getClickPosition, false);
 function getClickPosition(e){
   var parentPosition = getPosition(container);
   
-  var xPosition = e.clientX - parentPosition.x - (theThing.offsetWidth / 2);
-  var yPosition = e.clientY - parentPosition.y - (theThing.offsetHeight / 2);
+  var xPosition = e.clientX - parentPosition.x - (theThing.offsetWidth / 1);
+  var yPosition = e.clientY - parentPosition.y - (theThing.offsetHeight / 1);
  
   
   var translate3dValue = "translate3d(" + xPosition + "px," + yPosition + "px, 0)";
