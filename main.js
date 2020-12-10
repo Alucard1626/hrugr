@@ -1,6 +1,3 @@
-March 18, 2020How to Move an Object with Arrow Keys in JavascriptJavaScript Questions  0 Comments
-
-In this tutorial, you will learn how to move an object using arrow keys in javacript.
 
 let circle = document.querySelector('.circle');
 let moveBy = 10;
