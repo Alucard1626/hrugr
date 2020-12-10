@@ -4,11 +4,11 @@ body{
   margin: 0;
 }
 #contentContainer {
-  width: 550px;
-  height: 350px;
+  width: 710px;
+  height: 438px;
   border: 15px #EDEDED solid;
   overflow: hidden;
-  background-color: white;
+  background-image: url("https://megapenguincheats.files.wordpress.com/2012/01/card-jitsu-shadow-ultimate-sneak-peak-1.png"); 
   cursor: pointer;
 }
 #thing{
