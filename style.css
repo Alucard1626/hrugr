@@ -1,22 +1,20 @@
-#target-box{
-  width: 500px;
-  height: 500px;
-  background-color: #999;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px dotted #fff;
+body{
+  padding: 50px
 }
-#target{
-  background-color: #f30f4f;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#contentContainer{
+  width: 1000px;
+  height: 500px;
+  background: lightgray;
+  border: 10px gray solid;
+  overflow: hidden;
+}
+
+#circle{
+  width: 100px;
+  height: 100px;
+  background: gold;
+  border: 5px orange solid;
   border-radius: 50%;
-  transform-origin: 25px 25px; 
-  transition: all 0.3s ease-in-out;
+  transform: translate3d(50px,50px,0);
+  transition: .3s ease-in;
 }
