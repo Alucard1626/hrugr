@@ -12,9 +12,9 @@
 }
 
 #character {
-    width: 287px;
-    height: 287px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaCu0Zdv7d-ZHxK2jQzneAf0fuwW6dIgGog&usqp=CAU");
+    width: 20px;
+    height: 20px;
+    background-color: gray;
     border-radius: 50%;
     position: relative;
     top: 200px;
