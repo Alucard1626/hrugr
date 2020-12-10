@@ -1,26 +1,6 @@
-body {
-    padding: 0;
-    margin: 0;
-    background color: #FFF
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
 }
-
-#contentcontainer {
-    width: 710px;
-    height: 438;
-    border: 3px black solid;
-    overflow: hidden;
-    background-image: url("https://megapenguincheats.files.wordpress.com/2012/01/card-jitsu-shadow-ultimate-sneak-peak-1.png");
-    cursor: pointer;
-}
-      
-
-#penguin {
-    width: 20px;
-    height: 20px;
-    background-color: gray;
-    border radius: none;
-    border: 50%;
-    
-    transform: translated3d(50px, 50px, 0);
-}
-        
