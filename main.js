@@ -1,12 +1,82 @@
-let thePenguin = document.querySelector("#penguin")
-let container = document.querySelector("#contentContainer")
+March 18, 2020How to Move an Object with Arrow Keys in JavascriptJavaScript Questions  0 Comments
 
-container.addEventListener("click", getClickPosition, false)
+In this tutorial, you will learn how to move an object using arrow keys in javacript.
 
-function getClickPosition(e) {
-  let xPosition = e.clientX;
-  let yPosition = e.clientY;
+let circle = document.querySelector('.circle');
+let moveBy = 10;
+
+window.addEventListener('load', () => {
+    circle.style.position = 'absolute';
+    circle.style.left = 0;
+    circle.style.top = 0;
+});
+
+
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
+            break;
+        case 'ArrowRight':
+            circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
+            break;
+        case 'ArrowUp':
+            circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
+            break;
+        case 'ArrowDown':
+            circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
+            break;
+    }
+});
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+let circle = document.querySelector('.circle');
+let moveBy = 10;
  
-  let translate3dValue = "translate3d(" + xPosition + "px" + yPosition + "px, 0")
-  thePenguin.style.transform = translate3dValue;
-}
+window.addEventListener('load', () => {
+    circle.style.position = 'absolute';
+    circle.style.left = 0;
+    circle.style.top = 0;
+});
+ 
+ 
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
+            break;
+        case 'ArrowRight':
+            circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
+            break;
+        case 'ArrowUp':
+            circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
+            break;
+        case 'ArrowDown':
+            circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
+            break;
+    }
+});
