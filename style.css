@@ -4,11 +4,13 @@ body{
   margin: 0;
 }
 #contentContainer {
-  width: 710px;
+  position: relative;
+  top: 300px;
+  left: 500px;
+  width: 355px;
   height: 438px;
   border: 1px black solid;
   overflow: hidden;
-  background-image: url("https://megapenguincheats.files.wordpress.com/2012/01/card-jitsu-shadow-ultimate-sneak-peak-1.png"); 
   cursor: pointer;
 }
 #thing{
@@ -19,4 +21,11 @@ body{
   border: 1px white solid;
   transform: translate3d(50px, 50px, 0);
   transition: transform .3s cubic-bezier(.17, .67, .83, .67);
+}
+
+#canvas2 {
+  position: relative;
+  top: 300px;
+  left: 500px;
+  background-image: url("https://megapenguincheats.files.wordpress.com/2012/01/card-jitsu-shadow-ultimate-sneak-peak-1.png");
 }
