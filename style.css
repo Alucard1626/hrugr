@@ -4,18 +4,19 @@ body{
   margin: 0;
 }
 #contentContainer {
-  width: 710px;
-  height: 438px;
-  border: 1px black solid;
+  width: 550px;
+  height: 350px;
+  border: 15px #EDEDED solid;
   overflow: hidden;
+  background-color: #F2F2F2;
   cursor: pointer;
 }
-#thing{
-  width: 20px;
-  height: 20px;
-  backgroud-color: white;
+#penguin{
+  width: 75px;
+  height: 75px;
+  backgroud-color: rgb(255, 207, 0);
   border-radius: 50%;
-  border: 1px white solid;
+  border: 1px black solid;
   transform: translate3d(50px, 50px, 0);
   transition: transform .3s cubic-bezier(.17, .67, .83, .67);
 }
