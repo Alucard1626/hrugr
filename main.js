@@ -1,4 +1,4 @@
-var theThing = document.querySelector("#penguin");
+var theThing = document.querySelector("#thing");
 var container = document.querySelector("#contentContainer");
 container.addEventListener("click", getClickPosition, false);
 
