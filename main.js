@@ -1,12 +1,12 @@
-var theThing = document.querySelector("#thing");
+var theThing = document.querySelector("#penguin");
 var container = document.querySelector("#contentContainer");
 container.addEventListener("click", getClickPosition, false);
 
 function getClickPosition(e){
   var parentPosition = getPosition(container);
   
-  var xPosition = e.clientX - parentPosition.x - (theThing.offsetWidth / 1);
-  var yPosition = e.clientY - parentPosition.y - (theThing.offsetHeight / 1);
+  var xPosition = e.clientX - parentPosition.x - (theThing.offsetWidth / 2);
+  var yPosition = e.clientY - parentPosition.y - (theThing.offsetHeight / 2);
  
   
   var translate3dValue = "translate3d(" + xPosition + "px," + yPosition + "px, 0)";
@@ -16,8 +16,8 @@ function getClickPosition(e){
 function getPosition(element) {
   var xPosition = 0;
   var yPosition = 0;
-
-    while (element) {
+ 
+  while (element) {
       xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
       yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
       element = element.offsetParent;
