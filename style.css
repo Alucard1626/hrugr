@@ -1,5 +1,5 @@
 body{
-  backgroound-color: #117ad0;
+  background-color: #117ad0;
   padding: 50px;
   margin: 0;
 }
@@ -14,7 +14,7 @@ body{
 #thing{
   width: 75px;
   height: 75px;
-  backgroud-color: rgb(255, 207, 0);
+  background-color: rgb(255, 207, 0);
   border-radius: 50%;
   border: 15px rgb(255, 199, 0) solid;
   transform: translate3d(50px, 50px, 0);
